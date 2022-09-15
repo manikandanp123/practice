@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model</title>
+    <link
+      rel="icon"
+      href="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aWNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    />
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      .full {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        background-color: aquamarine;
+        position: relative;
+      }
+      #model {
+        /* position: absolute; */
+        display: none;
+        width: 400px;
+        height: 400px;
+        background-color: red;
+      }
+      #x {
+        font-size: 50px;
+        font-weight: 400;
+        cursor: pointer;
+        margin-left: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="full" class="full">
+      <button id="submit">Submit</button>
+      <div id="model" class="model">
+        hello world !!! this is a model ....<span id="x">X </span>
+      </div>
+    </div>
+
+    <script>
+      let full = document.getElementById("full");
+      let x = document.getElementById("x");
+      let submit = document.getElementById("submit");
+      console.log(model);
+
+      //   full.addEventListener("click", () => {
+      //     console.log("full");
+      //     model.style.display = "none";
+      //     submit.style.display = "block";
+      //   });
+
+      submit.addEventListener("click", () => {
+        console.log("submit");
+        model.style.display = "block";
+        // submit.style.display = "none";
+        model.style.position = "absolute";
+      });
+
+      x.addEventListener("click", () => {
+        console.log("model");
+        model.style.display = "none";
+        // submit.style.display = "block";
+      });
+    </script>
+  </body>
+</html>

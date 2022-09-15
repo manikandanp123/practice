@@ -1,0 +1,98 @@
+﻿@page "/table"
+
+<div class="full">
+    <div class="logo" >
+        <img class="logo1" src="image/logo.png" alt="watercooler logo" />
+    </div>
+    <div class="full1">
+        <div class="head">
+            <h2 class="head1" >Bot Run Summary</h2>
+        </div>
+        <h4>FLUENTUI COmponents</h4>
+        <div class ="table1">
+        <FluentDataGrid  id="manualGrid" GenerateHeader=GenerateHeaderOption.None TItem=string>
+            <FluentDataGridRow TItem=string RowType="DataGridRowType.Header">
+                <p class="fih">
+                    <FluentDataGridCell GridColumn=1 CellType="DataGridCellType.ColumnHeader"><span>Topic</span> </FluentDataGridCell>
+                    <FluentDataGridCell class="title-1" GridColumn=1 CellType="DataGridCellType.ColumnHeader"><img class="downarrow" src="image/downarrow.png" /></FluentDataGridCell>
+                </p>
+                <FluentDataGridCell  GridColumn=2 CellType="DataGridCellType.ColumnHeader">Category</FluentDataGridCell>
+                <FluentDataGridCell class="title-1" GridColumn=3 CellType="DataGridCellType.ColumnHeader">Meeting Date</FluentDataGridCell>
+                <FluentDataGridCell class="title-1" GridColumn=4 CellType="DataGridCellType.ColumnHeader">Meeting Time</FluentDataGridCell>
+                <FluentDataGridCell class="title-1" GridColumn=5 CellType="DataGridCellType.ColumnHeader">Meeting Status</FluentDataGridCell>
+                <FluentDataGridCell class="title-1" GridColumn=6 CellType="DataGridCellType.ColumnHeader">Meeting Duration</FluentDataGridCell>
+                <FluentDataGridCell class="title-1" GridColumn=7 CellType="DataGridCellType.ColumnHeader">Reason For Skip</FluentDataGridCell>
+                <FluentDataGridCell class="title-1" GridColumn=8 CellType="DataGridCellType.ColumnHeader">Eligible Users</FluentDataGridCell>
+                <FluentDataGridCell class="title-1" GridColumn=9 CellType="DataGridCellType.ColumnHeader">Free Time Slot</FluentDataGridCell>
+            </FluentDataGridRow>
+            <FluentDataGridRow TItem=string>
+                <FluentDataGridCell GridColumn=1>Crypto Currencies</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=2>BlockChain</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=3>12/09/2022</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=4>09:45:88 UTC</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=5>Skipped</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=6>01:45:12s</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=7>Only 1 eligible User</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=8>mani@gmail.com</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=9>03:00:00 - 18:30:00 UTC</FluentDataGridCell>
+            </FluentDataGridRow>
+            <FluentDataGridRow TItem=string>
+                <FluentDataGridCell GridColumn=1>Crypto Currencies</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=2>BlockChain</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=3>12/09/2022</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=4>09:45:88 UTC</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=5>Skipped</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=6>01:45:12s</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=7>Only 1 eligible User</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=8>mani@gmail.com</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=9>03:00:00 - 18:30:00 UTC</FluentDataGridCell>
+            </FluentDataGridRow>
+
+        </FluentDataGrid>
+        </div>
+        <h4>HTML TAGS</h4>
+        <div class="tab-h">
+            <table cellpadding="10" cellspacing="5" >
+            <thead>
+                <th>Topic</th>
+                <th>Category</th>
+                <th>Meeting Date</th>
+                <th>Meeting Timing</th>
+                <th>Meeting Status</th>
+                <th>Meeting Duration</th>
+                <th>Reason For Skip</th>
+                <th>Eligible Users</th>
+                <th>Free Time Slot</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Crypto Currencies</td>
+                    <td>BlockChain</td>
+                    <td>12/09/2022 </td>
+                    <td>09:45:88 UTC </td>
+                    <td>Skipped</td>
+                    <td>01:45:12s</td>
+                    <td>Only 1 eligible User</td>
+                    <td>mani@gmail.com</td>
+                    <td>03:00:00 - 18:30:00 UTC</td>
+                </tr>
+                <tr>
+                    <td>Crypto Currencies</td>
+                    <td>BlockChain</td>
+                    <td>12/09/2022 </td>
+                    <td>09:45:88 UTC </td>
+                    <td>Skipped</td>
+                    <td>01:45:12s</td>
+                    <td>Only 1 eligible User</td>
+                    <td>mani@gmail.com</td>
+                    <td>03:00:00 - 18:30:00 UTC</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+</div>
+
+@code {
+
+}

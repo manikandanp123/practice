@@ -1,0 +1,504 @@
+﻿@page "/topics"
+
+ <div class="full">
+      <div class="head">
+        <img src="image/logo.png" class="logo" alt="logo" />
+      </div>
+      <div class="body">
+        <div class="b1">
+          <div class="bh1">
+            <p class="tn">Topics</p>
+            <div @onclick="addChange" class="add a1">
+                <img src="image/plus1.svg" alt="plus" class="plus" />
+                <p>Add</p>
+            </div>
+            <div @onclick="deleteChange" class="delete d1">
+                <img class="delete2" src="image/deleteicon.svg" alt="deleteIcon" />
+                <p>Delete</p>
+            </div>
+          </div>
+          <div class="table">
+            <div class="row">
+              <div class="col th1 f">
+                <p> Topics</p>
+              </div>
+              <div class="col th s">
+                <p> Category</p>
+              </div>
+              <div class="col th t">
+                <p>Action</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col td f">
+                <p> Crytocurrency</p>
+              </div>
+              <div class="col td s">
+                <p> Blockchain</p>
+              </div>
+              <div  class="col delete1 td t">
+                <p>
+                    <img @onclick="deleteChange" class="delete2" src="image/deleteicon.svg" alt="deleteIcon" />
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col td f">
+                <p> Solar</p>
+              </div>
+              <div class="col td s">
+                <p>Renewable Energy</p>
+              </div>
+              <div  class="col delete1 td t">
+                <p>
+                    <img @onclick="deleteChange" class="delete2" src="image/deleteicon.svg" alt="deleteIcon" />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="adding" >
+        <FluentDialog Hidden="add" style="width: 600px;
+    height: 329px;" id="foo" aria-label="Simple dialog" Modal="true">
+        <div class="inside">
+            <div class="addT">
+                <h2>Add Topic</h2>
+                <p>
+                    <img @onclick="addChange" src="image/cross.png" class="cross" />
+                </p>
+            </div>
+            <div class="side one">
+                <p>Category</p>
+                <select class="select" name="cars" id="cars">
+                    <option class="co" value="Select Category">
+                        Select Category
+                    </option>
+                    <option class="co" value="saab">
+                        Saab
+                    </option>
+                    <option class="co" value="mercedes">
+                        Mercedes
+                    </option>
+                    <option class="co" value="audi">
+                        Audi
+                    </option>
+                </select>
+            </div>
+            <div class="side two">
+                <p>Topic</p>
+                <select class="select" name="cars" id="cars">
+                    <option class="co" value="Select Category">
+                        Enter Topic
+                    </option>
+                    <option class="co" value="saab">
+                        Saab
+                    </option>
+                    <option class="co" value="mercedes">
+                        Mercedes
+                    </option>
+                    <option class="co" value="audi">
+                        Audi
+                    </option>
+                </select>
+            </div>
+            <div class="bbn">
+                <button @onclick="addChange" class="cancel btn">
+                    Cancel
+                </button>
+                <button class="save btn">Save</button>
+            </div>
+        </div>
+    </FluentDialog>
+    </div>
+    
+    <FluentDialog Hidden="delete" style="width: 600px;height: 329px;" id="foo" aria-label="Simple dialog" Modal="true">
+
+        <div class="inside">
+            <div>
+                <p class="delT">Delete Topic</p>
+            </div>
+            <div class="delFull">
+                <p class="delSure">
+                    Are you sure you want to delete this topic?
+                </p>
+                <p class="delC">Cryptocurrency</p>
+            </div>
+            <div class="bbn bbn1">
+                <button @onclick="deleteChange" class="cancel btn">
+                    Cancel
+                </button>
+                <button class="save btn">Delete</button>
+            </div>
+        </div>
+    </FluentDialog>
+
+
+    @*  @if(add){
+          <div class="model-add">
+          <div class="addT">
+            <h2>Add Topic</h2>
+            <p>
+              <img @onclick="addChange" src="image/cross.png" class="cross" />
+            </p>
+          </div>
+          <div class="side">
+            <p>Category</p>
+            <select class="select" name="cars" id="cars">
+              <option class="co" value="Select Category">
+                Select Category
+              </option>
+              <option class="co" value="saab">
+                Saab
+              </option>
+              <option class="co" value="mercedes">
+                Mercedes
+              </option>
+              <option class="co" value="audi">
+                Audi
+              </option>
+            </select>
+          </div>
+          <div class="side">
+            <p>Topic</p>
+            <select class="select" name="cars" id="cars">
+              <option class="co" value="Select Category">
+                Enter Topic
+              </option>
+              <option class="co" value="saab">
+                Saab
+              </option>
+              <option class="co" value="mercedes">
+                Mercedes
+              </option>
+              <option class="co" value="audi">
+                Audi
+              </option>
+            </select>
+          </div>
+          <div class="bbn">
+            <button @onclick="addChange" class="cancel btn">
+              Cancel
+            </button>
+            <button class="save btn">Save</button>
+          </div>
+        </div>
+      }*@
+      
+     @*@if(delete){
+        <div class="model-del">
+          <div>
+            <p class="delT">Delete Topic</p>
+          </div>
+          <div class="delFull">
+            <p class="delSure">
+              Are you sure you want to delete this topic?
+            </p>
+            <p class="delC">Cryptocurrency</p>
+          </div>
+          <div class="bbn bbn1">
+                <button @onclick="deleteChange" class="cancel btn">
+              Cancel
+            </button>
+            <button class="save btn">Delete</button>
+          </div>
+        </div>
+     }*@
+     
+    </div>
+@code {
+    private bool add = true;
+    private bool delete = true;
+
+    private void addChange(){
+        add = !add;
+    }
+    private void deleteChange()
+    {
+        delete = !delete;
+    }
+}
+<style>
+    .head {
+        height: 80px;
+        border-bottom: 1px solid #E0E0E0;
+    }
+    .one{
+        margin-top:10px;
+    }
+    .two{
+        margin-top:45px;
+    }
+    .inside{
+        padding:30px;
+    }
+    .logo {
+        width: 200px;
+        float: left;
+        margin: 14px 28px;
+    }
+
+    .body {
+        padding: 32px;
+        /* height: 80vh; */
+        border: 1px solid rgba(0, 0, 0, 0.07);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+    }
+
+    .positioning-region div:nth-last-child(1){
+        width:300px !important;
+        height:600px !important;
+        background-color:red;
+    }
+    .control{
+        width: 600px !important;
+        height: 329px !important;
+    }
+
+    .bh1 {
+        border-bottom: 1px solid rgba(219, 219, 219, 0.5);
+        background-color: #f5f5f5;
+        height: 48px;
+        display: flex;
+        align-items: center;
+    }
+
+    .tn {
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 0px;
+        margin-left: 48px;
+    }
+
+    .add, .delete {
+        display: flex;
+        cursor: pointer;
+    }
+    .plus{
+        width:20px;
+    }
+    .a1 {
+        margin: 0px;
+        margin-left: 200px;
+    }
+
+    .d1 {
+        margin: 0px;
+        margin-left: 20px;
+    }
+    .adding{
+        width:200px;
+    }
+    .delete2{
+        width:15px;
+        cursor:pointer;
+    }
+        .a1 p, .d1 p {
+            margin: 0px;
+            margin-left: 4px;
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+    .table {
+        background-color: #ffffff;
+        padding-left: 30px;
+        height: 70vh;
+    }
+
+    .full {
+        background-color: #f5f5f5;
+    }
+
+    th, td {
+        border-bottom: 1px solid rgba(219, 219, 219, 0.5);
+        
+    }
+
+    .row {
+        border-bottom: 1px solid rgba(219, 219, 219, 0.5);
+        ;
+        display: flex;
+    }
+
+    .th1 {
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 20px;
+        float: left;
+    }
+
+    .th {
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        padding: 20px;
+        float: left;
+    }
+
+    .td {
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        padding: 20px;
+        float: left;
+    }
+
+    .f, .s, .t {
+        width: 265px;
+    }
+
+        .f p, .s p, .t p {
+            float: left;
+            margin: 0px;
+        }
+
+    .delete1 {
+        width: 40px;
+    }
+
+    .model-add {
+        width: 600px;
+        height: 329px;
+        position: absolute;
+        top: 160px;
+        right: 435px;
+        bottom: 276px;
+        left: 479px;
+        background-color: #ffffff;
+        box-shadow: 0px 1.2px 3.6px rgba(0, 0, 0, 0.11), 0px 6.4px 14.4px rgba(0, 0, 0, 0.13);
+        border-radius: 4px;
+        padding:20px;
+    }
+
+    .model-del {
+        width: 434px;
+        height: 288px;
+        background: #FFFFFF;
+        box-shadow: 0px 1.2px 3.6px rgba(0, 0, 0, 0.11), 0px 6.4px 14.4px rgba(0, 0, 0, 0.13);
+        border-radius: 3px;
+        position: absolute;
+        top: 200px;
+        bottom: 238px;
+        left: 530px;
+        right: 468px;
+        padding: 32px;
+    }
+
+    .addT {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .delT {
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        float: left;
+    }
+
+    .black {
+        background-color: rgba(219, 219, 219, 0.5);
+    }
+
+    .addT h2 {
+        margin-left: 20px;
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .addT p {
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        width: 80px;
+        line-height: 20px;
+        background: #FFFFFF;
+        border: 1px solid #C7C7C7;
+        box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.07), 0px 1.6px 3.6px rgba(0, 0, 0, 0.11);
+        border-radius: 4px;
+    }
+
+    .select {
+        width: 536px;
+        height: 32px;
+        background: #FFFFFF;
+        box-shadow: 0px 1.2px 3.6px rgba(0, 0, 0, 0.11);
+        border-radius: 4px;
+    }
+
+    .co {
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .side {
+        padding: 20px;
+    }
+
+    .side p {
+        float: left;
+        margin:0px;
+        margin-top:5px;
+    }
+
+    .side select {
+        float: left;
+    }
+
+    .bbn {
+        margin: 55px 5px;
+        float: right;
+    }
+
+    .save {
+        background-color: #5B5FC7;
+        margin-left: 8px;
+        color: #ffffff;
+    }
+
+    .delSure {
+        float: left;
+        margin: 0px;
+    }
+
+    .delC {
+        float: left;
+        font-weight: 600;
+        margin: 0px;
+    }
+
+    .bbn1 {
+        float: right;
+        margin: 0px;
+        margin-top: 80px;
+    }
+
+    .save, .cancel {
+        cursor: pointer;
+    }
+
+    .delFull {
+        margin-top: 85px;
+        display: flex;
+    flex-direction: column;
+    }
+
+</style>

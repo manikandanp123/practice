@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image model</title>
+    <style>
+      .img {
+        cursor: pointer;
+        width: 500px;
+        height: 500px;
+      }
+      .img:hover {
+        opacity: 0.6;
+      }
+      .model {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+      }
+      .fullimg {
+        width: 80%;
+        margin: 5% auto;
+        position: relative;
+        left: 10%;
+      }
+      .text {
+        position: absolute;
+        left: 50%;
+        bottom: 8%;
+        font-weight: bolder;
+        background-color: red;
+        border-radius: 10px;
+        padding: 20px;
+      }
+      .close {
+        font-size: xx-large;
+        color: white;
+        position: absolute;
+        right: 3%;
+        top: 2%;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="full">
+      <div id="hide">
+        <h2>Image model</h2>
+        <p >after clicking on image it shows full image width</p>
+        <img
+          class="img"
+          src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt="Joyfull Dogs"
+        />
+
+        <img
+          class="img"
+          src="https://images.unsplash.com/photo-1570824104453-508955ab713e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1011&q=80"
+          alt="Cats"
+        />
+      </div>
+
+      <div class="model" id="mymodel">
+        <img class="fullimg" src="" alt="" />
+        <div class="close">&times;</div>
+        <p class="text"></p>
+      </div>
+    </div>
+  </body>
+  <script>
+    let model = document.getElementsByClassName("model")[0];
+    let hide = document.getElementById("hide");
+    console.log(model);
+    console.log(hide);
+    // let model1=document.getElementById("mymodel");
+    // console.log(model1);
+    let img = document.getElementsByClassName("img");
+    let fullimg = document.getElementsByClassName("fullimg")[0];
+    let text = document.getElementsByClassName("text")[0];
+    let closes = document.getElementsByClassName("close")[0];
+    console.log(img);
+    console.log(closes);
+    for (let i = 0; i < img.length; i++) {
+      img[i].onclick = function () {
+        console.log("maniiiiiiiiiiiiiiiiiiii");
+        console.log("image clicked");
+        model.style.display = "block";
+        hide.style.display = "none";
+        fullimg.src = img[i].src;
+        fullimg.alt = img[i].alt;
+        text.innerHTML = img[i].alt;
+      };
+    }
+    // img.addEventListener("onclick",(e)=>{
+    //     console.log("image clicked");
+    //     img.style.display="block";
+    //     img.style.width="100%";
+
+    // })
+    closes.onclick = () => {
+      console.log("close clicked");
+      model.style.display = "none";
+      hide.style.display = "block";
+    };
+    // console.log(img.src);
+    // img.onclick = function () {
+    //   console.log("image clicked");
+    //   model.style.display = "block";
+    //   hide.style.display = "none";
+    //   fullimg.src = img.src;
+    //   fullimg.alt = img.alt;
+    // };
+  </script>
+</html>

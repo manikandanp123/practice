@@ -1,0 +1,50 @@
+
+.head[b-i1hc8z62fq] {
+    height: 48px;
+    border-bottom: 1px solid rgb(11, 11, 12);
+    display: flex;
+    background-color: #f5f5f5;
+}
+
+.add[b-i1hc8z62fq], .delete[b-i1hc8z62fq] {
+    display: flex;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+    .add p[b-i1hc8z62fq], .delete p[b-i1hc8z62fq] {
+        margin-top: 5px;
+    }
+
+.downarrow[b-i1hc8z62fq] {
+    width: 20px;
+}
+
+.deicon[b-i1hc8z62fq], .plicon[b-i1hc8z62fq] {
+    width: 36px;
+    height: 36px;
+}
+
+.cat[b-i1hc8z62fq] {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0px 60px;
+}
+.mid[b-i1hc8z62fq]{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.tab[b-i1hc8z62fq]{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.tab1[b-i1hc8z62fq]{
+    width:800px !important;
+}
+fluent-data-grid-cell[b-i1hc8z62fq] {
+    font-weight: bold !important;
+}

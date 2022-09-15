@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "sGdckcHHLjIv/vTQq5dXDF6po6EUcRz05reQUiRxtw13zCMBwm8NXPdigVaarHavQ/Y9425cWEO5VdlOkWS4wQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ManikandanP\\Documents\\cloudAngles\\practice\\Blazer-cSharp\\fluent-blazor-server\\fluent-blazor-server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\blazorfluentui.corecomponents\\6.0.2\\blazorfluentui.corecomponents.6.0.2.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\blazorfluentui.listcomponents\\6.0.2\\blazorfluentui.listcomponents.6.0.2.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\dynamicdata\\7.4.3\\dynamicdata.7.4.3.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.0\\microsoft.aspnetcore.authorization.6.0.0.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.0\\microsoft.aspnetcore.components.6.0.0.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.0\\microsoft.aspnetcore.components.analyzers.6.0.0.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.0\\microsoft.aspnetcore.components.forms.6.0.0.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.0\\microsoft.aspnetcore.components.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.0\\microsoft.aspnetcore.metadata.6.0.0.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\microsoft.fast.components.fluentui\\1.5.1\\microsoft.fast.components.fluentui.1.5.1.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\microsoft.jsinterop\\6.0.0\\microsoft.jsinterop.6.0.0.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\system.io.pipelines\\6.0.0\\system.io.pipelines.6.0.0.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\ManikandanP\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

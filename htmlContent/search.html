@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Item</title>
+    <style>
+      .sub{
+        width: 0px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        display: none;
+        height: 100%;
+      }
+      .menu,.x{
+        cursor: pointer;
+      }
+      .x{
+        position: absolute;
+        left: 70px;
+        top: 0px;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="all">
+        <div class="menu" onclick="closes()">MENU</div>
+        <div class="sub">
+          <div >Home</div>
+          <div >career</div>
+          <div >support</div>
+          <div >help</div>
+          <div class="x" onclick="x()" >*</div>
+        </div>
+      </div>
+      <input
+        id="search"
+        type="text"
+        onkeyup="myFunction()"
+        placeholder="Search...."
+      />
+      <ul class="ul">
+        <li class="li">HTML</li>
+        <li class="li">css</li>
+        <li class="li">javascript</li>
+        <li class="li">nodejs</li>
+        <li class="li">reactjs</li>
+        <li class="li">mongoDB</li>
+      </ul>
+    </div>
+    <script>
+      let sub=document.getElementsByClassName("sub")[0];
+      function closes() {
+        console.log("clicked menu");
+        sub.style.width="100px";
+        sub.style.background="lightblue";
+        sub.style.display="block";
+      }
+      function x(){
+        sub.style.display="none";
+      }
+      function myFunction() {
+        var filter;
+        let ul = document.getElementsByClassName("ul")[0];
+        let input = document.getElementsByTagName("input")[0];
+        console.log(ul);
+        let li = document.getElementsByClassName("li");
+        console.log(li);
+
+        filter = input.value.toUpperCase();
+        console.log("filter", filter);
+        for (let i = 0; i < li.length; i++) {
+          if (li[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

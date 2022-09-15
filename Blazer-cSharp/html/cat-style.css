@@ -1,0 +1,62 @@
+.head {
+    height: 48px;
+    border-bottom: 1px solid rgb(11, 11, 12);
+    display: flex;
+    background-color: #f5f5f5;
+}
+
+.deIcon, .plIcon {
+    width: 36px;
+    height: 36px;
+}
+
+.cat {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0px 60px;
+}
+
+.add, .delete {
+    display: flex;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.deName, .plName {
+    margin: 10px 0px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.b1 {
+    padding: 30px 48px;
+}
+
+table,th,td {
+    border-bottom: 0.2px solid black;
+}
+table{
+    border-collapse: collapse;
+}
+td {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+.ac{
+    display: flex;
+}
+.action{
+    color: blue;
+}
+table{
+    border-spacing: 20px;
+}
+td:nth-last-child(1), th:nth-last-child(1){
+    border-bottom: 0px solid black;
+}

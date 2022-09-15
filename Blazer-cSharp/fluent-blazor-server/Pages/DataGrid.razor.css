@@ -1,0 +1,11 @@
+﻿body {
+}
+FluentDataGridCell{
+    background-color:red;
+}
+p{
+    background-color:green;
+}
+FluentDataGridRow{
+    color:orange;
+}

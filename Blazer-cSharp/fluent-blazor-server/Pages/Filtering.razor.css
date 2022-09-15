@@ -1,0 +1,50 @@
+﻿
+.head {
+    height: 48px;
+    border-bottom: 1px solid rgb(11, 11, 12);
+    display: flex;
+    background-color: #f5f5f5;
+}
+
+.add, .delete {
+    display: flex;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+    .add p, .delete p {
+        margin-top: 5px;
+    }
+
+.downarrow {
+    width: 20px;
+}
+
+.deicon, .plicon {
+    width: 36px;
+    height: 36px;
+}
+
+.cat {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0px 60px;
+}
+.mid{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.tab{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.tab1{
+    width:800px !important;
+}
+fluent-data-grid-cell {
+    font-weight: bold !important;
+}

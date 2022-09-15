@@ -1,0 +1,30 @@
+﻿@page "/categories"
+
+<div class="head">
+    <p class="cat">categories</p>
+    <div class="add"> <img class="plicon" src="image/plus.png" alt="add icon"><p class="plname">add</p></div>
+    <div class="delete"><img class="deicon" src="image/delete.png" alt="delete icon"><p class="dename">delete</p></div>
+</div>
+ <FluentDataGrid  id="manualGrid" GenerateHeader=GenerateHeaderOption.None TItem=string>
+            <FluentDataGridRow TItem=string RowType="DataGridRowType.Header">
+                <p class="fih">
+                    <FluentDataGridCell GridColumn=1 CellType="DataGridCellType.ColumnHeader"><span>Categories</span> </FluentDataGridCell>
+                    <FluentDataGridCell class="title-1" GridColumn=1 CellType="DataGridCellType.ColumnHeader"><img class="downarrow" src="image/downarrow.png" /></FluentDataGridCell>
+                </p>
+                <FluentDataGridCell  GridColumn=2 CellType="DataGridCellType.ColumnHeader">Topic</FluentDataGridCell>
+                <FluentDataGridCell class="title-1" GridColumn=3 CellType="DataGridCellType.ColumnHeader">Action</FluentDataGridCell>
+                <FluentDataGridCell class="title-1" GridColumn=4 CellType="DataGridCellType.ColumnHeader"></FluentDataGridCell>
+                </FluentDataGridRow>
+            <FluentDataGridRow TItem=string>
+                <FluentDataGridCell GridColumn=1>Block Chain</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=2>3</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=3>15</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=4> <img class="plicon" src="image/plus.png" alt="add icon">  Add Action</FluentDataGridCell>
+            </FluentDataGridRow>
+            <FluentDataGridRow TItem=string>
+                <FluentDataGridCell GridColumn=1>Block Chain</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=2>3</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=3>15</FluentDataGridCell>
+                <FluentDataGridCell GridColumn=4> <img class="plicon" src="image/plus.png" alt="add icon">  Add Action</FluentDataGridCell>
+            </FluentDataGridRow>
+        </FluentDataGrid>

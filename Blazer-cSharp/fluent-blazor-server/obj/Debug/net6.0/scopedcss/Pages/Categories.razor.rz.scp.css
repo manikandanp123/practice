@@ -1,0 +1,29 @@
+
+.head[b-yzjtvoujrd] {
+    height: 48px;
+    border-bottom: 1px solid rgb(11, 11, 12);
+    display: flex;
+    background-color: #f5f5f5;
+}
+.add[b-yzjtvoujrd], .delete[b-yzjtvoujrd] {
+    display: flex;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.add p[b-yzjtvoujrd],.delete p[b-yzjtvoujrd]{
+    margin-top:5px;
+}
+.downarrow[b-yzjtvoujrd]{
+    width:20px;
+}
+.deicon[b-yzjtvoujrd], .plicon[b-yzjtvoujrd] {
+    width: 36px;
+    height: 36px;
+}
+.cat[b-yzjtvoujrd] {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0px 60px;
+}
