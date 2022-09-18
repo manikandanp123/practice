@@ -3,15 +3,16 @@
 <h3>Filtering</h3>
 <div class="head">
     <p class="cat">categories</p>
-    <div class="add"> <img class="plicon" src="image/plus.png" alt="add icon"><p class="plname">Add</p></div>
-    <div class="delete"><img class="deicon" src="image/delete.png" alt="delete icon"><p class="dename">Delete</p></div>
+    <div class="add"> <img class="plicon" src="image/plus1.svg" alt="add icon"><p class="plname">Add</p></div>
+    <div class="delete"><img class="deicon" src="image/deleteicon.svg" alt="delete icon"><p class="dename">Delete</p></div>
 </div>
+
 <div class="mid">
-    <FluentTextField @oninput="FilterChanged">Filter Fruit</FluentTextField>
+    <FluentTextField Placeholder="Find" @oninput="FilterChanged"></FluentTextField>
 </div>
 
 <div class="tab">
-    <FluentDataGrid style="width:700px" class="tab1" id="sortingGrid" GridTemplateColumns="200px 200px 200px" RowsData=SortedRowsGrid ColumnDefinitions=SortingColumnsGrid>
+    <FluentDataGrid  class="tab1" id="sortingGrid" GridTemplateColumns="400px 400px 400px" RowsData=SortedRowsGrid ColumnDefinitions=SortingColumnsGrid>
         <HeaderCellTemplate>
             <FluentButton @onclick=@(()=>SortColumn(context))>
                 @context.Title

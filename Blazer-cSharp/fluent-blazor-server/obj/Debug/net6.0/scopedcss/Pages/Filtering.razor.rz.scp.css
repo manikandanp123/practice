@@ -12,17 +12,26 @@
     cursor: pointer;
 }
 
-    .add p[b-i1hc8z62fq], .delete p[b-i1hc8z62fq] {
-        margin-top: 5px;
-    }
+.column-header:nth-last-child(1)[b-i1hc8z62fq]{
+    display:none;
+}
+
+.neutral[b-i1hc8z62fq] {
+    display: none;
+}
+
+.add p[b-i1hc8z62fq], .delete p[b-i1hc8z62fq] {
+    margin-top: 5px;
+}
 
 .downarrow[b-i1hc8z62fq] {
     width: 20px;
 }
 
 .deicon[b-i1hc8z62fq], .plicon[b-i1hc8z62fq] {
-    width: 36px;
+    width: 16px;
     height: 36px;
+    margin-right:8px;
 }
 
 .cat[b-i1hc8z62fq] {
@@ -32,16 +41,13 @@
     font-size: 25px;
     margin: 0px 60px;
 }
-.mid[b-i1hc8z62fq]{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.mid[b-i1hc8z62fq] {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    margin-right: 100px;
 }
-.tab[b-i1hc8z62fq]{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
+
 .tab1[b-i1hc8z62fq]{
     width:800px !important;
 }

@@ -8,69 +8,69 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = fluent_blazor_server
 build_property.RootNamespace = fluent_blazor_server
-build_property.ProjectDir = C:\Users\ManikandanP\Documents\cloudAngles\practice\Blazer-cSharp\fluent-blazor-server\
+build_property.ProjectDir = c:\Users\ManikandanP\Documents\cloudAngles\practice\Blazer-cSharp\fluent-blazor-server\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ManikandanP\Documents\cloudAngles\practice\Blazer-cSharp\fluent-blazor-server
+build_property.MSBuildProjectDirectory = c:\Users\ManikandanP\Documents\cloudAngles\practice\Blazer-cSharp\fluent-blazor-server
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/App.razor]
+[c:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/Dialog.razor]
+[c:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/Dialog.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/Home.razor]
+[c:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/Topics.razor]
+[c:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/Topics.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9waWNzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Shared/SurveyPrompt.razor]
+[c:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/_Imports.razor]
+[c:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/Categories.razor]
+[c:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/Categories.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-yzjtvoujrd
 
-[C:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/DataGrid.razor]
+[c:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/DataGrid.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGF0YUdyaWQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-kwezc8uys0
 
-[C:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/Filtering.razor]
+[c:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/Filtering.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlsdGVyaW5nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-i1hc8z62fq
 
-[C:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/Table.razor]
+[c:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/Table.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFibGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-j5e1cwfm6z
 
-[C:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Shared/MainLayout.razor]
+[c:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-3i5uo5uit5
 
-[C:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Shared/NavMenu.razor]
+[c:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-pddmn70jwy
 
-[C:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/Error.cshtml]
+[c:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/_Host.cshtml]
+[c:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/_Layout.cshtml]
+[c:/Users/ManikandanP/Documents/cloudAngles/practice/Blazer-cSharp/fluent-blazor-server/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -12,17 +12,26 @@
     cursor: pointer;
 }
 
-    .add p, .delete p {
-        margin-top: 5px;
-    }
+.column-header:nth-last-child(1){
+    display:none;
+}
+
+.neutral {
+    display: none;
+}
+
+.add p, .delete p {
+    margin-top: 5px;
+}
 
 .downarrow {
     width: 20px;
 }
 
 .deicon, .plicon {
-    width: 36px;
+    width: 16px;
     height: 36px;
+    margin-right:8px;
 }
 
 .cat {
@@ -32,16 +41,13 @@
     font-size: 25px;
     margin: 0px 60px;
 }
-.mid{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.mid {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    margin-right: 100px;
 }
-.tab{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
+
 .tab1{
     width:800px !important;
 }
